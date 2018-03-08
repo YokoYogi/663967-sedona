@@ -6,111 +6,115 @@
     </head>
     <body>
 
-<!-- Начало главное меню -->
-	<header class="main-header">
-	<nav class ="main-navigation">
-		<div>
-		<a class = "main-header-logo">
-			<img src="img/logo-index.svg" alt="Логотип Sedona ">
-		</a>
-		</div>
-		<ul class ="site-navigation">
-			<li><a href="/info.html">Информация</a></li>
-			<li><a href="/foto.html">Фото и видео</a></li>
-			<li><a href="/map.html">Карта штата</a></li>
-			<li><a href="/hostel.html">Гостиницы</a></li>
-		</ul>
-	</nav>
-	</header>
+		<header class="main-header"><!-- Главное меню -->
+			<nav class ="main-navigation">
+			<ul class ="site-navigation">
+				<li><a href="info.html">Информация</a></li>
+				<li><a href="foto.html">Фото и видео</a></li>
+				<li><a href="map.html">Карта штата</a></li>
+				<li><a href="hostel.html">Гостиницы</a></li>
+				<li><a class = "main-header-logo" href  = "index.html"><img src="img/logo-index.svg" alt="Логотип Sedona "></a></li>
+			</ul>
+		</nav>
+		</header>
+
+		<main class = "container"><!-- Основное содержание -->
 	
-<!-- Конец главное меню -->
+			<section class="main-banner"><!-- Welcom sedona главное изображение -->
+				<img class = "welocome-banner"src="img/welcome-index.svg" alt="Welocome Sedona">
+			</section>
 
-	<main class = "container">
-		<img src="img/welcome-index.svg" alt="Welocome Sedona">
-		<h1 class ="slogan1">СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,<br>
-		ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h1>
-		<p class="slogan2">РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</p>
+			<section class="main-slogan"><!-- Главный Слоган -->	
+				<h1 class ="slogan-title">Седона - небольшой городок в Аризоне,заслуживающий большего!</h1>
+				<p class="slogan-text">Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
+			</section>
 
-	<section>
-		<img src="/n1.jpg" alt="Настоящий городок">
-	</section>
+			<section class="description"><!-- "Настоящий городок"(с картинкой) -->
+				<div class = "description-colored"><!-- блок с текстом -->
+					<h2 class ="description-title">Настоящий городок</h2>
+					<p class="description-text">- №1 -</p>
+					<p class="description-text">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+				</div>
+				<div class="description-picture"><!-- блок с картинкой -->
+					<img src="/n1.jpg" alt="Настоящий городок">
+				</div>
+			</section>
 
-<!-- Начало Жилье,Еда,Сувениры -->
-	<section class="photos-slides">
-		<figure class="slides">
-		<a href="/homes.html">
-			<img src="/homes.jpg" alt="Жилье">
-		</a>
-		<a href="/eat.html">
-			<img src="/eat.jpg" alt="Еда">
-		</a>
-		<a href="/gifts.html">
-			<img src="gifts.jpg" alt="Сувениры">
-		</a>
-		</figure>
-	</section>
-	<!-- Конец Жилье,Еда,Сувениры -->
+			<section class="description-list"><!-- Жилье, Еда,Сувениры -->
+				<ul class="description-list-ul"><!-- Cписок особенностей -->
+					<li class="description-list-li">
+						<img src="/homes.jpg" alt="Жилье">
+						<h2 class ="description-list-title">Жилье</h2>
+						<p class ="description-list-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+					</li>
+					<li class="description-list-li">
+						<img src="/eat.jpg" alt="Еда">
+						<h2 class ="description-list-title">Еда</h2>
+						<p class ="description-list-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+					</li>
+					<li class="description-list-li">
+						<img src="gifts.jpg" alt="Сувениры">
+						<h2 class ="description-list-title">Сувениры</h2>
+						<p class ="description-list-text">Не только китайского, но и местного производства!</p>
+					</li>
+				</ul>
+			</section>
+	
+			<section class="description"><!-- "Там есть мост дьявола"(с картинкой)  -->
+				<div class = "description-colored"><!-- блок с текстом -->
+					<h2 class ="description-title">Там есть мост дьявола</h2>
+					<p class="description-text">- №2 -</p>
+					<p class="description-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+				</div>
+				<div class="description-picture"><!-- блок с картинкой -->
+					<img src="/n2.jpg" alt="Там есть мост дьявола">
+				</div>
+			</section>
+			
+			<section class="description-list"><!-- Небольшая площадь, Красивая дорога, Мало туристов -->
+				<ul class="description-list-ul"><!-- Cписок достопримечательностей -->
+					<li class="description-list-li">
+						<h2 class ="description-list-title">Небольшая площадь</h2>
+						<p class ="description-list-text">- №3 -</p>
+						<p class ="description-list-text">Все доcтопримечательности находятся очень близко</p>
+					</li>
+					<li class="description-list-li">
+						<h2 class ="description-list-title">Красивая дорога</h2>
+						<p class ="description-list-text">- №4 -</p>
+						<p class ="description-list-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+					</li>
+					<li class="description-list-li">
+						<h2 class ="description-list-title">Мало туристов</h2>
+						<p class ="description-list-text">- №5 -</p>
+						<p class ="description-list-text">Большинство едет в Гранд Каньон и толпится там</p>
+					</li>
+				</ul>
+			</section>
+			
+			<section class="interest"><!-- ?Форма поиска гостиницы в Седоне? -->
+				<h3 class="interest-title">Заинтересовались?</h3>
+				<p class="interest-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+				<a class="search-button" href ="#">Поиск гостиницы в Седоне</a><!-- Кнопка открытия формы поиска -->
+			</section>
+			
+			<section class="Map"><!-- Карта -->
+				<img src="map.jpg" alt="Тут должна быть карта" </span>
+			</section>
+		</main>
 
-	<section>
-		<img src="/n2.jpg" alt="Там есть мост дьявола">
-	</section>
-
-	<!-- Начало Площадь,Дорога,Туристы -->
-	<section class="photos-slides">
-		<figure class="slides">
-		<a href="/area.html">
-			<img src="/area.jpg" alt="Небольшая площадь">
-		</a>
-		<a href="/road.html">
-			<img src="/road.jpg" alt="Красивая дорога">
-		</a>
-		<a href="/tourist.html">
-			<img src="tourist.jpg" alt="Мало туристов">
-		</a>
-		</figure>
-	</section>
-	<!-- Конец Площадь,Дорога,Туристы -->
-
-	<h2 class="interest">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
-	<p class="dates">УКАЖИТЕ ПРЕДПОЛАГЕМЫЕ ДАТЫ ПОЕЗДКИ,<br>
-	И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСЬТНИЦ В СЕДОНЕ</p>
-
-	</main>
-
-	<!-- Подвал -->
-
-	  <footer class="main-footer">
-        <section class="info">
-          <p>#VISITSEDONA</p>
-        </section>
-
-		<!-- Начало Соц сети  -->
-		<div class="footer-social">
-          <ul>
-			<il><a class = "social-button" href="#">Твиттер</a></li>
-			<il><a class = "social-button" href="#">Фейсбук</a></li>
-			<il><a class = "social-button" href="#">Что-то...</a></li>
-		  </ul>
-        </div>
-		<!-- Конец Соц сети -->
-
-        <section class="footer-htmlacademy">
-		<a href="https://htmlacademy.ru">
-			<img src="/htmlacademy.jpg" alt="htmlacademy">
-		</a>
-        </section>
+		<footer class="main-footer"><!-- Подвал -->
+			
+			<p class = "#VISITSEDONA">#VISITSEDONA</p>
+								
+			<ul class = "footer-social"><!-- Соц сети  -->
+				<li><a class = "social-button" href="#">Твиттер</a></li>
+				<li><a class = "social-button" href="#">Фейсбук</a></li>
+				<li><a class = "social-button" href="#">Ютюб</a></li>
+			</ul>
+			
+			<p class ="description-list-text">Website by</p>
+			<a href="https://htmlacademy.ru"><img src="/htmlacademy.jpg" alt="htmlacademy"></a>
+			
         </footer>
-
-		<section class="search">
-		<p>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</p>
-		<span class = "modal-close"> X </span>
-			<!-- Форма ввода гостиницы-->
-		</section>
-
-		<section class="map">
-		<span class = "modal-close"> X </span>
-			<!-- Форма карты -->
-		</section>
-
 	</body>
 </html>
