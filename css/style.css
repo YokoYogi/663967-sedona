@@ -24,39 +24,31 @@ h3
 	font-size: 21px;
 	line-height: 26px;
 }
-/* Главное меню */
+
+/* Главное меню  */
 header.main-header
 {
     position: relative;
 }
-
-.index-active
+.main-navigation--active
 {
 	color:#766357;
 }
-
-
-/* при наведении */
-.main-navigation a:hover 
+.main-navigation a:hover /*при наведении*/
 {
 	color:#81b3d2;
 /*  background-color:#669ec0 */
 }
-/* при нажатии */
-.main-navigation a:active 
+.main-navigation a:active /* при нажатии */
 {
 	color:rgba(0,0,0,0.3);
 }
-/* .main-navigation a:disabled {
-	color:#000000;
-}
-	.main-navigation a:active {
-	color:#766357;
-	 animation:none; 
-} */
+
 .main-navigation li {
     display: inline-block;
 }
+
+/***Содержание***/
 
 /* Главный Слоган */
 .main-slogan
@@ -83,16 +75,17 @@ header.main-header
 {
 	text-align:center;
 }
+
 /*Кнопка поиска гостиницы*/
 .interest a 
 {
 	width:568px; 
-	padding-bottom:30px;
-	padding-top:30px;
+	padding-bottom:32px;
+	padding-top:32px;
 	/* height:87px; */
 	color:#ffffff;
 	text-align: center;
-	
+		
 	background-color: #766357;
 	font-size: 21px;
     line-height: 26px;
@@ -102,14 +95,85 @@ header.main-header
 	/* padding:0; */
 }
 
-/*Страница каталог*/
+.interest a:hover
+{
+	background-color:#604e43
+}
+
+.interest a:active
+{
+	color:rgba(255, 255, 255, 0.3); 
+	background-color:#503e33
+}
+
+.date
+{
+	width:346px; /* ПОЛЯ ВВОДА как менять размер */
+	height:38px;
+	border: 2px solid #f2f2f2;
+	background-color: #f2f2f2;
+
+}
+
+.date:hover
+{
+	border: 2px solid #ebebeb;
+	background-color: #ebebeb;
+}
+
+.date:focus
+{
+	border: 2px solid #e5e5e5;
+	background: #fff; /* запасной цвет для старых браузеров */
+	background: rgba(255, 255, 255, 0);
+}
+
+.rating-button /*ПЛЮС И МИНУС ЭТО КАРТИНКИ??? и как тогда задавать наведение и нажатие*/
+{
+	border:none;
+	background: #fff; /* запасной цвет для старых браузеров */
+	background: rgba(255, 255, 255, 0);
+	text-align:center;
+	font: inherit;
+	font-size: 21px;
+}
+
+.search
+{
+	text-transform: uppercase;
+	width: 458px;
+	height: 58px;
+	
+	font: inherit; /*прописать так же для остальных поиск гостиницы..везде где шрифт BOLD в ФШ (400-об. 700 -жирный) и проверить по умолчанию какой в боди*/
+	font-weight: 700;
+	font-size: 21px;
+	color: #fff;
+	background-color: #81b3d2;
+	border:none;
+}
+
+.search:hover
+{
+	background-color: #669ec0;
+}
+
+.search:active
+{
+	color:rgba(255, 255, 255, 0.3);
+	background-color: #5496bd;
+}
+
+/* ***Страница КАТАЛОГ*** */
 
 /*  форма фильтрации */
-.form-filter
+.filter
 {
-	background: #3c739c;	
+	background-color: #3c739c;
+ 	background-image: url("/img/background-filter.jpg");
+	background-position: top center;
+	background-repeat: no-repeat;
 }
-/* кнопка на форме	 */
+/* кнопка на форме фильтрации */
 .submit-filter
 {
 	font: inherit;
@@ -123,34 +187,155 @@ header.main-header
     line-height: 21px;
 	display:block;
 	
+	color:#fff;
 	background: #fff; /* запасной цвет для старых браузеров */
 	background: rgba(255, 255, 255, 0);
 	border: 2px solid #fff;
-	border-radius: 2px; /*закругление рамки*/
+	border-radius: 1px; /*закругление рамки*/
 	border-color: #ffffff; /*цвет рамки*/
 	
 }	
-/* кнопка на форме	при наведении */
+
+
 .submit-filter:hover 
 {
 	color:#000000;
 	background-color:#fff; 
-/*  background-color:#669ec0 */
 }
 
+/*список типов сортировки*/
+.sorting a
+{ 
+	color:rgba(0, 0, 0, 0.3);
+	border-bottom:1px dotted #81b3d2;
+} 
 .sorting-list li
 {
-	display: inline-block;
+	display: inline-block;	
 }	
-
-.sorting-list a:hover
+.sorting a:hover
 {
 	color:#81b3d2;	
 }	
+.sorting a:active
+{
+	color:#000000;
+}
+.sorting .sorting-list--active 
+{
+ text-decoration:none;
+ color:#81b3d2;
+ border:none
+}	 
 
-/* Подвал */
+
+/*** Описание гостиницы***/
+.result-title a:hover
+{
+	color:#81b3d2;
+}
+
+.result-title a:active
+{
+	color:rgba(0, 0, 0, 0.3);
+}
+
+.result-type
+{
+	color:#333333;
+}	
+.result-price
+{
+	color:#333333;
+}
+ 
+ /* кнопка - подробнее*/
+.button-info 
+{
+	width:110px; 
+	padding-bottom:6px;
+	padding-top:6px;
+	/* height:87px; */
+	color:#ffffff;
+	text-align: center;
+	
+	background-color: #81b3d2;
+	font-size: 14px;
+    line-height: 21px;
+	display:block; 
+ 	
+	/* margin:30px auto 0;  */
+	/* padding:0; */
+}
+.button-info:hover
+{
+	background-color:#669ec0;
+}
+.button-info:active
+{
+	background-color:#5496bd;
+	color: rgba(255, 255, 255, 0.3);
+}
+ /* кнопка - забронировать*/	
+ 
+.button-book	
+{
+	width:142px; 
+	padding-bottom:6px;
+	padding-top:6px;
+	/* height:87px; */
+	color:#ffffff;
+	text-align: center;
+	
+	background-color: #766357;
+	font-size: 14px;
+    line-height: 21px;
+	display:block; 
+ 	
+	/* margin:30px auto 0;  */
+	/* padding:0; */
+}	
+.button-book:hover
+{
+	background-color:#604e43;
+}
+.button-book:active
+{
+	background-color:#503e33;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+/*Звезды*/
+.star-list li {
+    display: inline-block;
+}
+
+.rating-sum
+{
+	color:#666666;
+}	
+/* П О Д В А Л */
 
 .footer-social li
 {
 	display: inline-block;
 }	
+
+/* .social-button  ЧТО ДЕЛАТЬ С ИКОНКАМИ СОЦ,СЕТЕЙ. */
+{
+	width:46px; 
+	padding-bottom:6px;
+	padding-top:24px;
+	background-color:#81b3d2;
+}
+
+.social-button:hover
+{
+	background-color:#669ec0;
+}
+
+.social-button:active
+{
+	background-color:#5496bd;
+	color: rgba(255, 255, 255, 0.3);
+}

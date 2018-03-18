@@ -3,7 +3,8 @@
     <head>
        <meta charset="utf-8">
 	   <title>Sedona</title>
-		<link href="https://fonts.googleapis.com/css?family=PT+Sans&amp;subset=cyrillic" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic" rel="stylesheet"> 
+		  
 	<!-- <link href="css/normalize.css" rel="stylesheet"> -->
 		<link href="css/style.css" rel="stylesheet">
 	</head>
@@ -12,9 +13,9 @@
 		<header class="main-header"><!-- Главное меню -->
 			<nav class ="main-navigation">
 			<ul>
-				<li><a class="index-active" href="#" >Информация</a></li>
+				<li><a class="main-navigation--active" href="#" >Информация</a></li>
 				<li><a href="foto.html">Фото и видео</a></li>
-				<li><a class = "main-header-logo" href  = "index.html"><img src="img/logo-index.png" width="138" height="70" alt="Логотип Sedona"></a></li>
+				<li><a class="main-header-logo" href  = "index.html"><img src="img/logo-index.png" width="138" height="70" alt="Логотип Sedona"></a></li>
 				<li><a href="map.html">Карта штата</a></li>
 				<li><a href="/catalog.html">Гостиницы</a></li>		
 			</ul>
@@ -101,29 +102,30 @@
 				<form class="form-search" action = "#" method = "post"><!-- ?Форма поиска гостиницы в Седоне? -->
 					<p>
 						<label>Дата заезда:
-							<input type="text" name="Date-in" id="Datein-id" class="visually-hidden">Укажите дату заезда</input>
+							<input type="text" name="Date-in" id="Datein-id" class="visually-hidden date">Укажите дату заезда</input>
 						</label>
-						<button class="visually-hidden">Календарь</button>
+						<button class="visually-hidden"><img src="img/calendar.svg">Календарь</button> <!-- КАК скрыть КАЛЕНДАРЬ ??? (+классы для бутонов (или все батоны обинаково???), 
+						убрать бордер, задать фон) -->
 					</p>
 					<p>
 						<label>Дата выезда:
-							<input type="text" name="Date-out" id="Date-out-id" class="visually-hidden">Укажите дату выезда</input>
+							<input type="text" name="Date-out" id="Date-out-id" class="visually-hidden date">Укажите дату выезда</input>
 						</label>
-						<button class="visually-hidden">Календарь</button>
+						<button class="visually-hidden"><img src="img/calendar.svg">Календарь</button>
 					</p>
 					<p>
 						<label>Взрослые:
-							<input type="text" name="Grownup" id="Grownup-id" class="visually-hidden">Введите количество взрослых</input>
+							<input type="text" name="Grownup" id="Grownup-id" class="visually-hidden date">Введите количество взрослых</input>
 						</label>
-						<button class="visually-hidden">Больше</button>
-						<button class="visually-hidden">Меньше</button>
+						<button class="visually-hidden rating-button" >+</button>  <!--КАК ВСТАВИТЬ + и - ???? -->
+						<button class="visually-hidden rating-button">-</button>
 						<label>Дети:
-							<input type="text" name="children" id="children-id" class="visually-hidden">Введите количество детей</input>
+							<input type="text" name="children" id="children-id" class="visually-hidden date">Введите количество детей</input>
 						</label>
-						<button class="visually-hidden">Больше</button>
-						<button class="visually-hidden">Меньше</button>
+						<button class="visually-hidden rating-button">+</button>
+						<button class="visually-hidden rating-button">-</button>
 					</p>
-						<input type="submit"  value="Найти" class="visually-hidden">Найти гостиницу в Седоне</input>	
+						<input type="submit"  value="Найти" class="visually-hidden search">Найти гостиницу в Седоне</input>	
 				</form>
 			</section>
 			
@@ -137,12 +139,12 @@
 			<p class = "insta-tag">#VISITSEDONA</p>
 								
 			<ul class = "footer-social"><!-- Соц сети  -->
-				<li><a class = "social-button" href="#">Твиттер</a></li>
-				<li><a class = "social-button" href="#">Фейсбук</a></li>
-				<li><a class = "social-button" href="#">Ютюб</a></li>
+				<li><a class = "social-button" href="#"><img src="img/twitter.svg">Твиттер</a></li>
+				<li><a class = "social-button" href="#"><img src="img/fb-icon.svg">Фейсбук</a></li>
+				<li><a class = "social-button" href="#"><img src="img/youtube.svg">Ютюб</a></li>
 			</ul>
 			
-			<a href="https://htmlacademy.ru">Website by<img src="/htmlacademy.jpg" alt="htmlacademy"></a>
+			<a href="https://htmlacademy.ru">Website by<img src="img/logo-htmlacademy.svg" width="123" height="49" alt="htmlacademy"></a>
 			
         </footer>
 	</body>
