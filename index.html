@@ -9,23 +9,27 @@
 		<link href="css/style.css" rel="stylesheet">
 	</head>
     <body>
-
+	<div class = "main-container">
 		<header class="main-header"><!-- Главное меню -->
-			<nav class ="main-navigation">
-			<ul>
-				<li><a class="main-navigation--active" href="#" >Информация</a></li>
-				<li><a href="foto.html">Фото и видео</a></li>
-				<li><a class="main-header-logo" href  = "index.html"><img src="img/logo-index.png" width="138" height="70" alt="Логотип Sedona"></a></li>
-				<li><a href="map.html">Карта штата</a></li>
-				<li><a href="/catalog.html">Гостиницы</a></li>		
+		<nav>
+			
+			<ul class="main-navigation">
+				<!-- <div class="main-navigation-left"> -->
+					<li class="main-navigation-item"><a class="main-navigation--active" href="#" >Информация</a></li>
+					<li class="main-navigation-item"><a href="foto.html">Фото и видео</a></li>
+				<!-- </div> -->
+					<li class="main-navigation-item main-navigation-logo"><a class="main-header-logo" href  = "index.html"><img src="img/logo-index.png" width="138" height="70" alt="Логотип Sedona"></a></li>
+					<li class="main-navigation-item"><a href="map.html">Карта штата</a></li>
+					<li class="main-navigation-item"><a href="/catalog.html">Гостиницы</a></li>
 			</ul>
+			
 		</nav>
 		</header>
 
 		<main class = "container"><!-- Основное содержание -->
 	
 			<section class="main-banner"><!-- Welcom sedona главное изображение -->
-				<img class = "welocome-banner"src="img/welcome-index.jpg" width="1200" height="509" alt="Welocome Sedona">
+				<img class = "welocome-banner"src="img/welcome-index.jpg" width="1200" height="510" alt="Welocome Sedona">
 			</section>
 
 			<section class="main-slogan"><!-- Главный Слоган -->	
@@ -39,9 +43,9 @@
 					<p class="description-text">- №1 -</p>
 					<p class="description-text">Седона - не аттракцион для туристов,<br> там течет своя жизнь</p>
 				</div>
-				<div class="description-picture"><!-- блок с картинкой -->
-					<img src="img/true-city.jpg" width="800" height="256" alt="Настоящий городок">
-				</div>
+				
+				<img src="img/true-city.jpg" width="800" height="256" alt="Настоящий городок"><!-- Картинка -->
+				
 			</section>
 
 			<section class="description-list"><!-- Жилье, Еда,Сувениры -->
@@ -147,5 +151,6 @@
 			<a href="https://htmlacademy.ru">Website by<img src="img/logo-htmlacademy.svg" width="123" height="49" alt="htmlacademy"></a>
 			
         </footer>
+	</div>
 	</body>
 </html>
