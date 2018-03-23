@@ -79,19 +79,8 @@ h3
 	display: inline-block;
 	
 }   */ 
-.description
-{
-	padding:0;
-	display:flex;
-	justify-content: space-between;
-	background-color:rgba(54, 193, 208, 0.2);
-}	
-.description-colored
-{
-	
-	flex-grow:1;
-	background-color:rgba(90, 90, 208, 0.2);
-}	
+
+
 .main-navigation--active
 {
 	color:#766357;
@@ -105,8 +94,10 @@ h3
 	color:rgba(0,0,0,0.3);
 }
 
-
-
+.main-banner
+{
+	margin-bottom:54px;
+}	
 /***Содержание***/
 
 /* Главный Слоган */
@@ -114,20 +105,86 @@ h3
 {
 	text-align:center;	
 }
-
+.main-slogan h1
+{
+	
+	font-size:21px;
+	line-height:26px;
+	margin-bottom:28px;
+	/* letter-spacing: 0.3px; */	
+}
+.main-slogan p
+{
+	font-size:14px;
+	line-height:26px;
+	margin-bottom:51px;
+	letter-spacing: 0.1px; 	
+}
 /* Настоящий городок"(с картинкой) */
+.description
+{
+	display:flex;
+	justify-content: space-between;
+	background-color:#81b3d2;
+	color:#ffffff;
+}	
 .description-colored
 {
+	padding-top:28px; 
+	flex-grow:1;
+	display:block;
 	text-align:center;
+}	
+.description-colored h2
+{
+	font-size:22px;
+	line-height:21px;
+	padding-bottom:6px; 
+}	
+
+.description-colored span
+{
+	font-size:14px;
+	line-height:21px;
+	
 }
 
+.description-colored p
+{
+	padding-top:6px; 
+	font-size:14px;
+	line-height:21px;
+}	
+
+	
 /* Жилье, Еда,Сувениры */
+.description-list
+{
+	padding:0;
+	margin:0;
+	display:flex;
+	list-style:none;
+	 justify-content:space-around; 
+	/* background-color:rgba(54, 193, 208, 0.5); */
+}	
 .description-list li
 {
-	display: inline-block;
-	text-align:center;	
-	padding-left:135px;
+	padding:0;
+	margin:0;
+	padding-top:60px;
+	padding-bottom:67px;
+	width:400px;
+	/* background-color:rgba(90, 80, 80, 0.2); */
+	text-align:center;
+	align-items:center;
+
+	/* padding-left:135px;  */
 }
+
+.description-list li h2
+{
+	padding-top:4px;
+}	
 
 /* Форма поиска гостиницы в Седоне */
 .interest
