@@ -609,6 +609,24 @@ fieldset {
 	width: 50px;
 	height: 50px;
 }
+.PPW-checkbox input[type="checkbox"]:disabled + .checkbox-indicator::before,
+.PPW-checkbox input[type="checkbox"]:disabled + .checkbox-indicator::after 
+{
+	content: "";
+	content: url(../img/checkbox-off-dis.svg); 
+	position: absolute;
+	width: 50px;
+	height: 50px;
+}
+.PPW-checkbox input[type="checkbox"]:checked:disabled + .checkbox-indicator::before,
+.PPW-checkbox input[type="checkbox"]:checked:disabled + .checkbox-indicator::after 
+{
+	content: "";
+	content: url(../img/checkbox-on-dis.svg); 
+	position: absolute;
+	width: 50px;
+	height: 50px;
+}
 /*Блок №2*/
 .HMA-checkbox input[type="checkbox"] + .checkbox-indicator 
 {
@@ -629,6 +647,24 @@ fieldset {
 {
 	content: "";
 	content: url(../img/checkbox-on.svg); 
+	position: absolute;
+	width: 50px;
+	height: 50px;
+}
+.HMA-checkbox input[type="checkbox"]:disabled + .checkbox-indicator::before,
+.HMA-checkbox input[type="checkbox"]:disabled + .checkbox-indicator::after 
+{
+	content: "";
+	content: url(../img/checkbox-off-dis.svg); 
+	position: absolute;
+	width: 50px;
+	height: 50px;
+}
+.HMA-checkbox input[type="checkbox"]:checked:disabled + .checkbox-indicator::before,
+.HMA-checkbox input[type="checkbox"]:checked:disabled + .checkbox-indicator::after 
+{
+	content: "";
+	content: url(../img/checkbox-on-dis.svg); 
 	position: absolute;
 	width: 50px;
 	height: 50px;
