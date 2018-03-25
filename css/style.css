@@ -168,13 +168,14 @@ img {
 	padding:0;
 	margin:0;
 	display:flex;
-	list-style:none;
+	
 	justify-content:space-around; 
 	margin-bottom:69px;
 	/* background-color:rgba(54, 193, 208, 0.5);  */
 }	
 .description-list li
 {
+	list-style:none;
 	padding-top:143px; 
 	width:400px;
 	/* background-color:rgba(90, 80, 80, 0.2);  */
@@ -291,10 +292,6 @@ img {
 	color:rgba(255, 255, 255, 0.3); 
 	background-color:#503e33
 }
-.map
-{
-	background-color: rgba(203,221,169,0.8);
-}	
 
 /*ФОРМА поиска гостиницы*/
 .form-search
@@ -308,8 +305,8 @@ img {
 	left:316px; 
 	width:568px;
 	background-color: #b62424;
+	display:none;
 }	
-
 .form-date
 {
 	display:flex;
@@ -330,11 +327,11 @@ img {
 }
 .form-date label
 {
+	
 	padding:0;
 	margin:0;
 	/* padding-right:32px; */
 }	
-	
 .form-peope
 {
 	display:flex;
@@ -430,7 +427,7 @@ img {
 	padding-bottom:38px;	
 	/* margin-top:-120px; */
 }	
-.footer-data-catalog /* Основные данные */	
+.footer-data-catalog /* Основные данные гостиницы*/	
 {
 	margin:0;
 	padding:0;
@@ -442,7 +439,7 @@ img {
 
 	/* list-style:none; */
 	justify-content:space-between; 
-	background-color:rgba(255,255,255,0.8);
+	/* background-color:rgba(255,255,255,0.8); */
 	padding-bottom:38px;	
 	 margin-top:4px; 
 }	
@@ -569,6 +566,16 @@ fieldset {
 	/* background-color: #3c739c; */
 	
 }
+.form-filter-HMA
+{
+	/* background-color: #819ebe; */
+	display:flex;
+	margin:0;
+	padding:0;
+	flex-direction:column;
+	width:288px;
+	padding-left:24px;	
+}	
 .form-filter label
 {
 	padding-bottom:25px;
@@ -576,16 +583,18 @@ fieldset {
 }	
 /* + Ч Е К Б О К С */
 /*Блок №1*/
-.PPW-checkbox input[type="checkbox"] + .checkbox-indicator /* рисуем рамку */
+.PPW-checkbox input[type="checkbox"] + .checkbox-indicator 
 {
 	position: absolute;
 	left: 72px;
 
 	width: 50px;
 	height: 50px;
+	
+	cursor: pointer;
 }
-
-.PPW-checkbox input[type="checkbox"] + .checkbox-indicator::before {
+.PPW-checkbox input[type="checkbox"] + .checkbox-indicator::before 
+{
 	content:url(../img/checkbox-off.svg); 
 }
 .PPW-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
@@ -598,16 +607,18 @@ fieldset {
 	height: 50px;
 }
 /*Блок №2*/
-.HMA-checkbox input[type="checkbox"] + .checkbox-indicator /* рисуем рамку */
+.HMA-checkbox input[type="checkbox"] + .checkbox-indicator 
 {
 	position: absolute;
 	left: 328px;
 
 	width: 50px;
 	height: 50px;
+	
+	cursor: pointer;
 }
-
-.HMA-checkbox input[type="checkbox"] + .checkbox-indicator::before {
+.HMA-checkbox input[type="checkbox"] + .checkbox-indicator::before 
+{
 	content:url(../img/checkbox-off.svg); 
 }
 .HMA-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
@@ -620,17 +631,130 @@ fieldset {
 	height: 50px;
 }
 /* - Ч Е К Б О К С */
-.form-filter-HMA
+/*Форма фильтрации стоимости*/
+.filter-range 
 {
-	/* background-color: #819ebe; */
-	display:flex;
-	margin:0;
-	padding:0;
-	flex-direction:column;
-	width:288px;
-	padding-left:24px;	
-}	
+	width: 317px;
+	padding-left:194px;
+	color: #ffffff;
+	text-transform: uppercase;
+}
 
+.filter-range legend 
+{
+  margin-bottom: 7px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+.price-controls 
+{
+  position: relative;
+  /* background-color:#fff; */
+  height: 32px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after /* разделитель*/
+{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label /*стили для лейблов*/
+{
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price /*Ширина и внутренний отступ слева*/
+{
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input /*добавим стили для полей ввода.*/
+{
+	width: 50px;
+
+	margin: 0;
+	color: inherit; 
+	font: inherit;
+
+  background: none;
+  border: none; 
+}
+/**/
+.range-controls /* ползунок*/
+{
+  position: relative;
+
+  margin-bottom: 18px;
+}
+
+.range-controls .scale 
+{
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar 
+{
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle /*шарики - ползунки*/
+{
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle-min /*позиционирование*/
+{
+  left: 0;
+}
+
+.range-toggle-max /*позиционирование*/
+{
+  left: 80%;
+}
+
+.range-toggle:hover 
+{
+  background: #1c4f80;
+}
 /* кнопка на форме фильтрации */
 .submit-filter
 {
@@ -638,8 +762,8 @@ fieldset {
 	text-transform: uppercase;
 	text-align: center;
 	width:138px;
-	padding-bottom:11px;
-	padding-top:11px;
+	padding-bottom:6px;
+	padding-top:6px;
 	
 	font-size: 14px;
     line-height: 21px;
@@ -651,12 +775,13 @@ fieldset {
 	border: 2px solid #fff;
 	border-radius: 1px; /*закругление рамки*/
 	border-color: #ffffff; /*цвет рамки*/
-	
+	cursor: pointer;
 }	
 .submit-filter:hover 
 {
 	color:#000000;
-	background-color:#fff; 
+	background-color:#fff;
+		
 }
 
 /*список типов сортировки*/

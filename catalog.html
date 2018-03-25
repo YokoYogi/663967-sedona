@@ -13,12 +13,12 @@
 		<nav>
 			<ul class="main-navigation">
 				<!-- <div class="main-navigation-left"> -->
-					<li><a class="main-navigation--active" href="#" >Информация</a></li>
-					<li><a href="foto.html">Фото и видео</a></li>
+					<li><a href="index.html" >Информация</a></li>
+					<li><a href="#">Фото и видео</a></li>
 				<!-- </div> -->
 					<li class="main-navigation-logo"><a class="main-header-logo" href  = "index.html"><img src="img/logo-index.png" width="138" height="70" alt="Логотип Sedona"></a></li>
-					<li><a href="map.html">Карта штата</a></li>
-					<li><a href="/catalog.html">Гостиницы</a></li>
+					<li><a href="#">Карта штата</a></li>
+					<li><a class="main-navigation--active" href="#">Гостиницы</a></li>
 			</ul>
 		</nav>
 		</header>
@@ -67,13 +67,21 @@
 
 				</fieldset>
 				
-				<fieldset><!-- Стоимость в сутки -->
-						<legend>Стоимость в сутки</legend>
-						<!-- фильтрация стоимости -->
-						<input type="text" name="price-before" id="price-id-before"  class="visually-hidden">Укажите стоимость от</input>
-						<input type="text" name="price-after" id="price-id-after"  class="visually-hidden">Укажите стоимость до</input>
-						<!-- Здесь будет ползунок -->
-						<input type="submit" value="Показать"  class="submit-filter visually-hidden">Показать результат</input>	
+				<fieldset class="filter-range"><!-- Стоимость в сутки -->
+						<legend>Стоимость в сутки (Р):</legend>
+						<div class="price-controls"><!-- Фильтрация стоимости -->
+							<label class="min-price">от <input type="text" name="min-price" value="0"></label>
+							<label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+						</div>
+						<div class="range-controls"><!-- Ползунок -->
+              				<div class="scale">
+								<div class="bar"></div>
+							</div>
+						
+							<div class="range-toggle range-toggle-min"></div>
+							<div class="range-toggle range-toggle-max"></div>
+						</div>
+					<input type="submit" value="Показать"  class="submit-filter"><span class="visually-hidden">Показать</span></input>	
 				</fieldset>
 			</form>	
 		</section>
