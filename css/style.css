@@ -302,58 +302,42 @@ img {
 	padding:0;
 	margin:0;
 	position:absolute;
-	/* align-items:center; */
 	left:316px; 
 	width:568px;
-	background-color: #b62424;
-	display:none;
+	background-color:rgba(255, 255, 255, 1);
+	font-weight: 700;
+	/* display:none; */
 }	
 .form-date
 {
+	padding:0;
+	margin:0;
 	display:flex;
-	flex-direction:column;
+	flex-direction:column; 
+	align-items:left;
+	padding-left:56px;
 	
-	padding:0;
-	margin:0;
- 	padding-top:53px; 
+	padding-top:26px;
+	margin-bottom:30px;
+	font-size: 14px;
+	line-height: 21px;
 	
-}	
-.form-date input
-{
-	padding:0;
-	margin:0;
-	background-color: #fff;
-	width:332px;
-	margin-bottom:23px;
 }
 .form-date label
 {
-	
-	padding:0;
-	margin:0;
-	/* padding-right:32px; */
+	padding-top:26px;
 }	
-.form-peope
+.form-date input
 {
-	display:flex;
-	justify-content:center;
-}
-.form-peope input
-{
-	padding:0;
-	margin:0;
-	background-color: #fff;
-	width:117px;
-	margin-bottom:23px;
+	padding-top:8px;
+	padding-bottom:8px;
+	padding-right:180px;
+	background-color:#f2f2f2;
+	font:inherit;
 }	
 .date
 {
-	width:346px; /* ПОЛЯ ВВОДА как менять размер */
-	height:38px;
 	border: 2px solid #f2f2f2;
-	background-color: #b62424;
-	
-
 }
 .date:hover
 {
@@ -366,15 +350,192 @@ img {
 	background: #fff; /* запасной цвет для старых браузеров */
 	background: rgba(255, 255, 255, 0);
 }
-.rating-button 
+/*календарь на поле ввода №1*/
+.calendar-in path
 {
-	border:none;
-	background: #fff; /* запасной цвет для старых браузеров */
-	background: rgba(255, 255, 255, 0);
-	text-align:center;
-	font: inherit;
-	font-size: 21px;
+	fill: rgba(0, 0, 0, 0.3);
 }
+.calendar-in 
+{
+	margin:0;
+	padding:0;
+	position:absolute;
+	right:64px;
+	top:62px;
+	cursor: pointer;
+}
+.calendar-in:hover path
+{
+	fill:#000000;
+}
+.calendar-in:focus path 
+{
+	fill:#000000;
+}
+.calendar-in:active path 
+{
+	fill:#81b3d2;
+}
+/*календарь на поле ввода №2*/
+.calendar-out
+{
+	margin:0;
+	padding:0;
+	position:absolute;
+	right:64px;
+	top:130px;
+	cursor: pointer;
+}
+.calendar-out path
+{
+	fill: rgba(0, 0, 0, 0.3);
+}
+.calendar-out:hover path
+{
+	fill:#000000;
+}
+.calendar-out:focus path 
+{
+	fill:#000000;
+}
+.calendar-out:active path 
+{
+	fill:#81b3d2;
+}
+.form-date .label-date-in input
+{
+	margin-left:20px;
+}
+.form-date .label-date-out input
+{
+	margin-left:15px;
+}
+/*ввод данные о людях*/
+.form-peope
+{
+	padding:0;
+	margin:0;
+	display:flex;
+	/* justify-content:space-between; */
+	align-items:center;
+	box-sizing:border-box;
+	height:40px;
+	/* width:458px; */
+	/* background-color:rgba(255, 255, 100, 0.8); */
+	margin-bottom:52px;
+}
+.form-peope label
+{
+	padding-left:54px;
+	
+}	
+.form-peope input
+{
+	width:37px;
+	height:36px;
+	border:none;
+	background-color:#f2f2f2;
+	text-align:center;
+	border:none;
+	font:inherit;
+	/*  margin-left:20px;  */
+}
+.rating-button-min-big
+{
+	height:38px;
+	width:40px;
+	border:none;
+	background-color:#f2f2f2;
+	color:#a9a9a9;
+	margin-left:35px; 
+	margin-right:-4px; 
+	font:inherit;
+	text-align:center;
+}
+.rating-button-plus-big
+{
+	height:38px;
+	width:40px;
+	border:none;
+	background-color:#f2f2f2;
+	color:#a9a9a9;
+	margin-left:-4px; 
+	margin-right:-4px;
+	font:inherit;	
+}
+.rating-button-min-big:hover
+{
+	color:#000000;
+}	
+.rating-button-min-big:focus
+{
+	color:#000000;
+}
+.rating-button-min-big:active
+{
+	color:#81b3d2;
+}
+.rating-button-plus-big:hover
+{
+	color:#000000;
+}	
+.rating-button-plus-big:focus
+{
+	color:#000000;
+}
+.rating-button-plus-big:active
+{
+	color:#81b3d2;
+}
+.rating-button-min-cld
+{
+	height:38px;
+	width:40px;
+	border:none;
+	background-color:#f2f2f2;
+	color:#a9a9a9;
+	margin-left:24px; 
+	margin-right:-4px;
+	font:inherit;
+}
+.rating-button-plus-cld
+{
+	height:38px;
+	width:40px;
+	border:none;
+	background-color:#f2f2f2;
+	color:#a9a9a9;
+	margin-left:-4px; 
+	margin-right:-4px; 
+	font:inherit;
+}
+.rating-button-min-cld:hover
+{
+	color:#000000;
+}	
+.rating-button-min-cld:focus
+{
+	color:#000000;
+}
+.rating-button-min-cld:active
+{
+	color:#81b3d2;
+}
+.rating-button-plus-cld:hover
+{
+	color:#000000;
+}	
+.rating-button-plus-cld:focus
+{
+	color:#000000;
+}
+.rating-button-plus-cld:active
+{
+	color:#81b3d2;
+}
+
+
+/*кнопка поиска*/
 .search
 {
 	text-transform: uppercase;
@@ -387,6 +548,8 @@ img {
 	color: #fff;
 	background-color: #81b3d2;
 	border:none;
+	margin-left:55px;
+	margin-bottom:55px;
 }
 .search:hover
 {
@@ -690,10 +853,9 @@ fieldset {
 .price-controls 
 {
   position: relative;
-  /* background-color:#fff; */
+/*   background-color:#6a6a6a;  */
   height: 32px;
   margin-bottom: 20px;
-
   font-size: 0;
 
   border: 2px solid #ffffff;
@@ -716,37 +878,44 @@ fieldset {
 
 .price-controls label /*стили для лейблов*/
 {
+  left:50px;
   display: inline-block;
-
   font-size: 14px;
+margin: 0;
+padding:0;
   line-height: 38px;
-  vertical-align: top;
   cursor: pointer;
+  margin-top:-3px;
+  margin-bottom:50px;
+/*   background-color:#693339;  */
 }
 
-.price-controls .min-price,
+.price-controls .min-price
+{
+	width: 90px;
+	padding-left: 65px;
+}	
 .price-controls .max-price /*Ширина и внутренний отступ слева*/
 {
   width: 90px;
-  padding-left: 65px;
+  padding-left: 55px;
 }
 
 .price-controls input /*добавим стили для полей ввода.*/
 {
 	width: 50px;
-
 	margin: 0;
+	padding:0;
 	color: inherit; 
 	font: inherit;
-
-  background: none;
-  border: none; 
+	margin-bottom:50px;
+	background: none;
+	border: none; 
 }
 /**/
 .range-controls /* ползунок*/
 {
   position: relative;
-
   margin-bottom: 18px;
 }
 
@@ -778,6 +947,8 @@ fieldset {
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
+  
+  
 }
 
 .range-toggle-min /*позиционирование*/
@@ -804,6 +975,8 @@ fieldset {
 	padding-bottom:6px;
 	padding-top:6px;
 	
+	margin-left:84px;
+	margin-top:30px;
 	font-size: 14px;
     line-height: 21px;
 	display:block;
@@ -1056,7 +1229,6 @@ fieldset {
 	width:112px;
 	
 }	
-
 .rating ul
 {
 	display:flex;
