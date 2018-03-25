@@ -56,6 +56,7 @@ img {
 {
 	margin:0;	
 	padding:0;
+	font-weight: 700;
 /* 	margin-bottom:-20px; */
 	padding-bottom:16px;
 	padding-top:16px;
@@ -554,6 +555,7 @@ fieldset {
 	line-height: 21px;
 	font-weight: 700; 
 	margin-bottom:25px;
+	color:#fff;
 }
 .form-filter-PPW
 {
@@ -580,6 +582,7 @@ fieldset {
 {
 	padding-bottom:25px;
 	padding-left:40px;
+	color:#fff;
 }	
 /* + Ч Е К Б О К С */
 /*Блок №1*/
@@ -889,37 +892,8 @@ fieldset {
 	 border:1px solid #e5e5e5; 
 	/* outline: 1px solid #e5e5e5; */
 }
-.rating
-{
-	padding:0;
-	margin:0;
-	/* background-color: #85436e; */
-	position:absolute;
-	left:1034px;
-	width:103px;
 	
-}	
-.rating ul
-{
-	display:flex;
-	flex-wrap:wrap;
-	padding:0;
-	margin:0;
-	flex-direction:row-reverse;
-	padding-bottom:44px;
-	
-}
-.rating li
-{
-	padding-top:5px; 
-	padding-right:7px;
-	
-}	
-.rating span
-{
-	background-color:#f2f2f2;	
-}	
-
+/*** Описание гостиницы ***/
 .hotel-item .hotel-img
 {
 	padding-top:7px;
@@ -932,7 +906,6 @@ fieldset {
 	padding-left:30px;
 	
 }	
-
 .hotel-description ul
 {
  	padding:0;
@@ -948,7 +921,7 @@ fieldset {
 .hotel-description li
 {
 	list-style:none;
-	
+	color:#333333;
 }	
 .hotel-description h3
 {
@@ -967,7 +940,6 @@ fieldset {
 	justify-content:space-between;
 	width:259px;
 }	
-/*** Описание гостиницы***/
 .hotel-description h3 a:hover
 {
 	color:#81b3d2;
@@ -976,16 +948,8 @@ fieldset {
 {
 	color:rgba(0, 0, 0, 0.3);
 }
-.result-type
-{
-	color:#333333;
-}	
-.result-price
-{
-	color:#333333;
-}
- 
- /* кнопка - подробнее*/
+
+  /* кнопка - подробнее*/
 .button-info 
 {
 	width:110px; 
@@ -998,6 +962,7 @@ fieldset {
 	background-color: #81b3d2;
 	font-size: 14px;
     line-height: 21px;
+	font-weight: 700;
 	display:block; 
  	
 	/* margin:30px auto 0;  */
@@ -1013,7 +978,6 @@ fieldset {
 	color: rgba(255, 255, 255, 0.3);
 }
  /* кнопка - забронировать*/	
- 
 .button-book	
 {
 	width:142px; 
@@ -1026,6 +990,7 @@ fieldset {
 	background-color: #766357;
 	font-size: 14px;
     line-height: 21px;
+	font-weight: 700;
 	display:block; 
  	
 	/* margin:30px auto 0;  */
@@ -1045,8 +1010,43 @@ fieldset {
 .star-list li {
     display: inline-block;
 }
-
-.rating-sum
+.rating
 {
-	color:#666666;
+	padding:0;
+	margin:0;
+	/* background-color: #85436e; */
+	position:absolute;
+	left:1017px;
+	width:112px;
+	
 }	
+
+.rating ul
+{
+	display:flex;
+	flex-wrap:wrap;
+	padding:0;
+	margin:0;
+	flex-direction:row-reverse;
+	padding-bottom:42px;
+	/* padding-right:1px; */
+	
+}
+.rating li
+{
+	padding-top:5px; 
+	padding-left:7px; 
+	
+}	
+.rating span
+{
+	display:block;
+	width:110px;
+	padding-top:2px;
+	padding-bottom:4px;
+	font:inherit;
+	text-align:center;
+	background-color:#f2f2f2;
+	color:#666666;
+		
+}
