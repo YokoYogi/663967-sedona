@@ -94,23 +94,29 @@
 				</ul>
 			</section>
 			
-			<section class="interest"><!-- ?Форма поиска гостиницы в Седоне? -->
+			<section class="interest"><!-- Форма поиска гостиницы в Седоне -->
 				<h3>Заинтересовались?</h3>
 				<p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-				<a href ="#">Поиск гостиницы в Седоне</a><!-- Кнопка открытия формы поиска -->
+				<a class="button-search" href ="#">Поиск гостиницы в Седоне</a><!-- Кнопка открытия формы поиска -->
 				<form class="form-search" action = "#" method = "post"><!-- ?Форма поиска гостиницы в Седоне? -->
 					
 					<div class="form-date">
-						<div class="calendar-in">
+					<!-- 	<div class="calendar-in">
 							<svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
-
-						</div>
+						</div> -->
 						<label class="label-date-in">Дата заезда:
-							<input type="text" name="Date-in" id="Datein-id" class="date"><span class="visually-hidden">Укажите дату заезда</span></input>
+							<a class="date-of-entry-cal" href="#">
+								<span class="icon-calendar">
+									::before
+								</span>
+							</a>
+							<input type="text" name="Date-in" id="Datein-id" class="date">
+								<span class="visually-hidden">Укажите дату заезда</span>
+							</input>
 						</label>
-						<div class="calendar-out">
+				<!-- 		<div class="calendar-out">
 							<svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
-						</div>
+						</div> -->
 						<label  class="label-date-out">Дата выезда:
 							<input type="text" name="Date-out" id="Date-out-id" class="date"><span class="visually-hidden">Укажите дату выезда</span></input>
 						</label>
@@ -119,13 +125,13 @@
 					<div class="form-peope">
 						<label>Взрослые: 	
 							<button class="rating-button-min-big">&#8212;</button>
-								<input type="text" name="Grownup" id="Grownup-id" class="inout"><span class="visually-hidden">Введите количество взрослых</span></input>
+								<input type="number" name="Grownup" id="Grownup-id" class="inout"></input>
 							<button class="rating-button-plus-big">+</button>
 						</label>
 											
 						<label>Дети:
 							<button class="rating-button-min-cld">&#8212;</button>
-								<input type="text" name="children" id="children-id" class="inout"><span class="visually-hidden">Введите количество детей</span></input>
+								<input type="number" name="children" id="children-id" class="inout"></input>
 							<button class="rating-button-plus-cld">+</button>
 						</label>
 									

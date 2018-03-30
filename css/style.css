@@ -266,7 +266,7 @@ img {
 }
 
 /*Кнопка поиска гостиницы*/
-.interest a 
+.button-search
 {
 	width:568px; 
 	padding-bottom:31px;
@@ -284,11 +284,11 @@ img {
 	margin:30px auto 0; 
 	/* padding:0; */
 }
-.interest a:hover
+.button-search:hover
 {
 	background-color:#604e43
 }
-.interest a:active
+.button-search:active
 {
 	color:rgba(255, 255, 255, 0.3); 
 	background-color:#503e33
@@ -317,10 +317,12 @@ img {
 	align-items:left;
 	padding-left:56px;
 	
-	padding-top:26px;
+	padding-top:27px;
 	margin-bottom:30px;
 	font-size: 14px;
 	line-height: 21px;
+	
+	background-color:rgba(210, 129, 179, 0.8)
 	
 }
 .form-date label
@@ -329,12 +331,50 @@ img {
 }	
 .form-date input
 {
-	padding-top:8px;
-	padding-bottom:8px;
-	padding-right:180px;
+/* 	padding-top:10px;
+	padding-bottom:5px; */
+	
+	height:34px;
+	padding-left:13px;
+	/* padding-right:164px; */
+	width:328px;
 	background-color:#f2f2f2;
 	font:inherit;
+	position: relative;
 }	
+.date-of-entry-cal,.date-of-departure-cal {
+	position:absolute;
+	font-size:21px;
+	line-height:26px;
+	color:#c2c2c2;
+	z-index:1;
+}
+
+.date-of-entry-cal {
+	top:60px;
+	right:60px
+}
+/* .date-of-entry-cal {
+	top:127px;
+	right:60px
+} */
+.date-of-entry-cal span:hover
+{
+	color:#000000;
+}
+.date-of-entry-cal span:active
+{
+	color:#81b3d2
+}
+
+.icon-calendar:hover path
+{
+	fill:#000000;
+}
+
+.icon-calendar::before {
+	content:url(../img/calendar.svg);
+}
 .date
 {
 	border: 2px solid #f2f2f2;
@@ -347,7 +387,7 @@ img {
 .date:focus
 {
 	border: 2px solid #e5e5e5;
-	background: #fff; /* запасной цвет для старых браузеров */
+	background: #fff; 
 	background: rgba(255, 255, 255, 0);
 }
 /*календарь на поле ввода №1*/
@@ -417,37 +457,66 @@ img {
 	margin:0;
 	display:flex;
 	/* justify-content:space-between; */
-	align-items:center;
 	box-sizing:border-box;
 	height:40px;
-	/* width:458px; */
-	/* background-color:rgba(255, 255, 100, 0.8); */
+	/* width:600px; */
+	background-color:rgba(210, 129, 179, 0.8);
 	margin-bottom:52px;
+	/* align-items:center; */
 }
 .form-peope label
 {
+	padding:0;
+	margin:0;
 	padding-left:54px;
 	
 }	
 .form-peope input
 {
-	width:37px;
-	height:36px;
+	padding:0;
+	margin:0;
+	width:38px;
+	height:38px;
 	border:none;
 	background-color:#f2f2f2;
 	text-align:center;
 	border:none;
+	
 	font:inherit;
 	/*  margin-left:20px;  */
+	
+	
 }
+/*отключение переключателей в цифровом поле*/
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+
+/* input[type=date]:required:invalid::-webkit-datetime-edit {
+    color: transparent;
+}
+input[type=date]:focus::-webkit-datetime-edit {
+    color: black !important;
+} */
+
+/* input[type=date]::-webkit-inner-spin-button { display: none; } */
+
+
 .rating-button-min-big
 {
 	height:38px;
-	width:40px;
+	width:38px;
 	border:none;
 	background-color:#f2f2f2;
 	color:#a9a9a9;
-	margin-left:35px; 
+	margin-left:38px; 
 	margin-right:-4px; 
 	font:inherit;
 	text-align:center;
@@ -455,7 +524,7 @@ img {
 .rating-button-plus-big
 {
 	height:38px;
-	width:40px;
+	width:38px;
 	border:none;
 	background-color:#f2f2f2;
 	color:#a9a9a9;
@@ -463,6 +532,7 @@ img {
 	margin-right:-4px;
 	font:inherit;	
 }
+
 .rating-button-min-big:hover
 {
 	color:#000000;
@@ -494,7 +564,7 @@ img {
 	border:none;
 	background-color:#f2f2f2;
 	color:#a9a9a9;
-	margin-left:24px; 
+	margin-left:26px; 
 	margin-right:-4px;
 	font:inherit;
 }
