@@ -322,7 +322,7 @@ img {
 	font-size: 14px;
 	line-height: 21px;
 	
-	background-color:rgba(210, 129, 179, 0.8)
+/* 	background-color:rgba(210, 129, 179, 0.8) */
 	
 }
 .form-date label
@@ -341,39 +341,52 @@ img {
 	background-color:#f2f2f2;
 	font:inherit;
 	position: relative;
-}	
+}
+/*календари*/	
 .date-of-entry-cal,.date-of-departure-cal {
 	position:absolute;
 	font-size:21px;
 	line-height:26px;
 	color:#c2c2c2;
 	z-index:1;
+	/* background-color:rgba(255, 255, 100, 1); */
 }
-
 .date-of-entry-cal {
-	top:60px;
-	right:60px
+	top:61px;
+	right:64px
+	
 }
-/* .date-of-entry-cal {
-	top:127px;
-	right:60px
-} */
-.date-of-entry-cal span:hover
+.date-of-entry-cal::before 
 {
-	color:#000000;
+	content:url(../img/calendar-peace.svg);	
 }
-.date-of-entry-cal span:active
+.date-of-entry-cal:hover
 {
-	color:#81b3d2
-}
-
-.icon-calendar:hover path
-{
-	fill:#000000;
-}
-
-.icon-calendar::before {
+	content:"";
 	content:url(../img/calendar.svg);
+}
+.date-of-entry-cal:active
+{
+	content:"";
+	content:url(../img/calendar-active.svg);
+}	
+.date-of-departure-cal {
+	top:129px;
+	right:64px
+}
+.date-of-departure-cal::before 
+{
+	content:url(../img/calendar-peace.svg);	
+}
+.date-of-departure-cal:hover
+{
+	content:"";
+	content:url(../img/calendar.svg);
+}
+.date-of-departure-cal:active
+{
+	content:"";
+	content:url(../img/calendar-active.svg);
 }
 .date
 {
@@ -390,65 +403,23 @@ img {
 	background: #fff; 
 	background: rgba(255, 255, 255, 0);
 }
-/*календарь на поле ввода №1*/
-.calendar-in path
-{
-	fill: rgba(0, 0, 0, 0.3);
-}
-.calendar-in 
-{
-	margin:0;
-	padding:0;
-	position:absolute;
-	right:64px;
-	top:62px;
-	cursor: pointer;
-}
-.calendar-in:hover path
-{
-	fill:#000000;
-}
-.calendar-in:focus path 
-{
-	fill:#000000;
-}
-.calendar-in:active path 
-{
-	fill:#81b3d2;
-}
-/*календарь на поле ввода №2*/
-.calendar-out
-{
-	margin:0;
-	padding:0;
-	position:absolute;
-	right:64px;
-	top:130px;
-	cursor: pointer;
-}
-.calendar-out path
-{
-	fill: rgba(0, 0, 0, 0.3);
-}
-.calendar-out:hover path
-{
-	fill:#000000;
-}
-.calendar-out:focus path 
-{
-	fill:#000000;
-}
-.calendar-out:active path 
-{
-	fill:#81b3d2;
-}
 .form-date .label-date-in input
 {
 	margin-left:20px;
+	font-size: 14px;
+	line-height: 21px;
+ /*  font-weight: 700; */
+	color: #000000;
+	text-transform: uppercase;
 }
 .form-date .label-date-out input
 {
-	margin-left:15px;
+	margin-left:16px;
+	font-size: 14px;
+	line-height: 21px;
+ /*  font-weight: 700; */
+	color: #000000;
+	text-transform: uppercase;
 }
 /*ввод данные о людях*/
 .form-peope
@@ -460,17 +431,26 @@ img {
 	box-sizing:border-box;
 	height:40px;
 	/* width:600px; */
-	background-color:rgba(210, 129, 179, 0.8);
+	/* background-color:rgba(210, 129, 179, 0.8); */
 	margin-bottom:52px;
 	/* align-items:center; */
 }
-.form-peope label
+.big
 {
 	padding:0;
 	margin:0;
 	padding-left:54px;
 	
 }	
+
+.cld
+{
+	padding:0;
+	margin:0;
+	padding-left:57px;
+	
+}	
+
 .form-peope input
 {
 	padding:0;
@@ -507,7 +487,6 @@ input[type=date]:focus::-webkit-datetime-edit {
 } */
 
 /* input[type=date]::-webkit-inner-spin-button { display: none; } */
-
 
 .rating-button-min-big
 {
@@ -564,14 +543,14 @@ input[type=date]:focus::-webkit-datetime-edit {
 	border:none;
 	background-color:#f2f2f2;
 	color:#a9a9a9;
-	margin-left:26px; 
+	margin-left:24px; 
 	margin-right:-4px;
 	font:inherit;
 }
 .rating-button-plus-cld
 {
 	height:38px;
-	width:40px;
+	width:38px;
 	border:none;
 	background-color:#f2f2f2;
 	color:#a9a9a9;
