@@ -306,8 +306,14 @@ img {
 	width:568px;
 	background-color:rgba(255, 255, 255, 1);
 	font-weight: 700;
-	/* display:none; */
-}	
+	display:none;
+}
+
+.modal-show /* отображение модельного окна */
+{
+  display: block;
+}
+
 .form-date
 {
 	padding:0;
@@ -623,7 +629,12 @@ input[type=date]:focus::-webkit-datetime-edit {
 	display:flex;
 	width:auto;
 	height:auto
+}
+.footer-map 
+{
+background-image:url(../img/map.png);
 }	
+	
 .footer-data /* Основные данные */	
 {
 	margin:0;

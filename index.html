@@ -140,7 +140,8 @@
 
 		<footer class="main-footer"><!-- Подвал -->
 			<div class="footer-map"><!-- Карта -->
-				<img src="img/map.png" width="1200" height="593" alt="Месторасположение:США-Аризона-Седона">
+				<!-- <img src="img/map.png" width="1200" height="593" alt="Месторасположение:США-Аризона-Седона"> -->
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d611187.5817593832!2d-112.02313599358473!3d34.69893166912054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1522486398510" width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</div>
 			<div class="footer-data">
 				<div class="VISITSEDONA">
@@ -198,5 +199,40 @@
 			</div>
         </footer>
 	</div>
+	<script>
+		var link    = document.querySelector(".button-search"); <!-- кнопка открытия формы -->
+		var popup   = document.querySelector(".form-search"); <!-- модальное окно -->
+		
+		
+		var form    = popup.querySelector("form-search");
+		var Datein  = popup.querySelector("[name=Date-in]");
+		var DateOut = popup.querySelector("[name=Date-out]");
+		
+		link.addEventListener("click", function (evt) <!-- событие клика -->
+		{ evt.preventDefault();  <!-- отмена стандартного действия -->
+	
+		if (popup.classList.contains('modal-show'))  <!-- Если при событии клика модальное окно видимо, тогда скрываем, иначе показываем -->
+		{	popup.classList.remove('modal-show'); } 	
+		else 
+		{
+			popup.classList.add('modal-show');
+		};
+			Datein.focus();			
+		});
+		
+		
+		window.addEventListener("keydown", function (evt) <!-- обработчик закрытия окна при помощи esc -->
+		{
+		if (evt.keyCode === 27) 
+		{
+			evt.preventDefault();
+		if (popup.classList.contains("modal-show")) 
+			{
+				popup.classList.remove("modal-show");
+			}
+		}
+		});;
+  
+	</script>
 	</body>
 </html>
