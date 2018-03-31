@@ -23,14 +23,16 @@ body
 	background-color: #ffffff;	
 }
 
-a {
+a 
+{
 	text-decoration: none;
 	color:#000000;
 }
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+input[type="radio"].visually-hidden 
+{
   position: absolute;
 
   width: 1px;
@@ -46,7 +48,8 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }	
 
-img {
+img 
+{
   max-width: 100%;
   height: auto;
 }
@@ -77,34 +80,37 @@ img {
 	padding-bottom:17px;
 	line-height:26px
 }	
-.main-header li {
+.main-header li 
+{
 	box-sizing:border-box;
 	width:240px;
 	list-style:none;
 }
-.main-header li:nth-child(1) {
+.main-header li:nth-child(1) 
+{
 	padding-left:72px;
 }
-.main-header li:nth-child(2) {
+.main-header li:nth-child(2) 
+{
 	margin-right:240px;
 	text-align:center;
 }
-.main-header-logo {
+.main-header-logo 
+{
 	position:absolute;
 	top:0;
 	left:50%;
 	margin-left:-69px
 }
-
-
-.main-header li:nth-child(3) {
+.main-header li:nth-child(3) 
+{
 	text-align:center;
 }
-.main-header li:nth-child(4) {
+.main-header li:nth-child(4) 
+{
 	padding-right:72px;
 	text-align:right
 }
-
 .main-navigation--active
 {
 	color:#766357;
@@ -332,7 +338,6 @@ img {
 {
   display: flex;
 }
-
 .form-date
 {
 	padding:0;
@@ -364,7 +369,8 @@ img {
 	position: relative;
 }
 /*календари*/	
-.date-of-entry-cal,.date-of-departure-cal {
+.date-of-entry-cal,.date-of-departure-cal 
+{
 	position:absolute;
 	font-size:21px;
 	line-height:26px;
@@ -372,7 +378,8 @@ img {
 	z-index:1;
 	/* background-color:rgba(255, 255, 100, 1); */
 }
-.date-of-entry-cal {
+.date-of-entry-cal 
+{
 	top:61px;
 	right:64px
 	
@@ -391,7 +398,8 @@ img {
 	content:"";
 	content:url(../img/calendar-active.svg);
 }	
-.date-of-departure-cal {
+.date-of-departure-cal 
+{
 	top:129px;
 	right:64px
 }
@@ -536,7 +544,6 @@ input[type=date]:focus::-webkit-datetime-edit {
 	margin-right:-4px; */
 	font:inherit;	
 }
-
 .rating-button-min-big:hover
 {
 	color:#000000;
