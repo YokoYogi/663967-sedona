@@ -62,7 +62,6 @@ img
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: 700;
-/* 	margin-bottom:-20px; */
 	padding-bottom:16px;
 	padding-top:16px;
 	background-color:#fff;
@@ -215,7 +214,6 @@ img
 .description-list li:nth-child(1)/* Жилье    - position-img - элемент №1*/
 {
 	/* background-color:rgba(210, 180, 129, 0.5); */
-	/* position:absolute; */
 	background-image:url(../img/homes.svg);
 	background-repeat:no-repeat;
 	background-position:161px 60px; 
@@ -224,7 +222,6 @@ img
 .description-list li:nth-child(2)/* Еда      - position-img - элемент №2*/
 {
 	/* background-color:rgba(210, 180, 129, 0.5); */
-	/* position:absolute; */
 	background-image:url(../img/eat.svg);
 	background-repeat:no-repeat;
 	background-position:160px 61px;
@@ -233,7 +230,6 @@ img
 .description-list li:nth-child(3)/* Сувениры - position-img - элемент №3*/
 {
 	/* background-color:rgba(210, 180, 129, 0.5); */
-	/* position:absolute; */
 	background-image:url(../img/gifts.svg);
 	background-repeat:no-repeat;
 	background-position:center;
@@ -297,7 +293,6 @@ img
 	width:568px; 
 	padding-bottom:31px;
 	padding-top:30px;
-	/* height:87px; */
 	color:#ffffff;
 	text-align: center;
 		
@@ -308,7 +303,6 @@ img
 	display:block; 
  	
 	margin:30px auto 0; 
-	/* padding:0; */
 }
 .button-search:hover
 {
@@ -335,7 +329,6 @@ img
 	font-weight: 700;
 	display:none;
 }
-
 .modal-show /* отображение модельного окна */
 {
   display: flex;
@@ -346,8 +339,6 @@ img
 	margin:0;
 	display:flex;
 	flex-direction:column; 
-/* 	align-items:center; */
-	/* margin-left:56px; */
 	width:459px;
 	margin-top:27px;
 	margin-bottom:30px;
@@ -441,7 +432,6 @@ img
 	margin-left:20px;
 	font-size: 14px;
 	line-height: 21px;
- /*  font-weight: 700; */
 	color: #000000;
 	text-transform: uppercase;
 }
@@ -450,7 +440,6 @@ img
 	margin-left:16px;
 	font-size: 14px;
 	line-height: 21px;
- /*  font-weight: 700; */
 	color: #000000;
 	text-transform: uppercase;
 }
@@ -475,15 +464,12 @@ img
 {
 	padding:0;
 	margin:0;
-	/* margin-left:55px; */
-	
 }	
 .cld
 {
 	padding:0;
 	margin:0;
 	margin-left:55px; 
-	
 }	
 /*поле ввода количества*/
 .form-peope input
@@ -498,9 +484,6 @@ img
 	border:none;
 	
 	font:inherit;
-	/*  margin-left:20px;  */
-	
-	
 }
 /*отключение переключателей в цифровом поле*/
 input[type=number]::-webkit-outer-spin-button,
@@ -512,17 +495,6 @@ input[type=number]::-webkit-inner-spin-button {
 input[type=number] {
     -moz-appearance:textfield;
 }
-
-
-/* input[type=date]:required:invalid::-webkit-datetime-edit {
-    color: transparent;
-}
-input[type=date]:focus::-webkit-datetime-edit {
-    color: black !important;
-} */
-
-/* input[type=date]::-webkit-inner-spin-button { display: none; } */
-/*Кнопки +/-*/
 .rating-button-min-big
 {
 	height:38px;
@@ -531,7 +503,7 @@ input[type=date]:focus::-webkit-datetime-edit {
 	background-color:#f2f2f2;
 	color:#a9a9a9;
 	margin-left:41px; 
-	/* margin-right:-4px; */ 
+ 
 	font:inherit;
 	text-align:center;
 }
@@ -542,8 +514,7 @@ input[type=date]:focus::-webkit-datetime-edit {
 	border:none;
 	background-color:#f2f2f2;
 	color:#a9a9a9;
-/* 	margin-left:-4px; 
-	margin-right:-4px; */
+	
 	font:inherit;	
 }
 .rating-button-min-big:hover
@@ -578,7 +549,7 @@ input[type=date]:focus::-webkit-datetime-edit {
 	background-color:#f2f2f2;
 	color:#a9a9a9;
 	margin-left:24px; 
-	/* margin-right:-4px; */
+
 	font:inherit;
 }
 .rating-button-plus-cld
@@ -588,8 +559,7 @@ input[type=date]:focus::-webkit-datetime-edit {
 	border:none;
 	background-color:#f2f2f2;
 	color:#a9a9a9;
-	/* margin-left:-4px; */ 
-	/* margin-right:-4px; */ 
+
 	font:inherit;
 }
 .rating-button-min-cld:hover
@@ -624,13 +594,12 @@ input[type=date]:focus::-webkit-datetime-edit {
 	width: 459px;
 	height: 58px;
 	
-	font: inherit; /*прописать так же для остальных поиск гостиницы..везде где шрифт BOLD в ФШ (400-об. 700 -жирный) и проверить по умолчанию какой в боди*/
+	font: inherit; 
 	font-weight: 700;
 	font-size: 21px;
 	color: #fff;
 	background-color: #81b3d2;
 	border:none;
-	/* margin-left:55px; */
 	margin-bottom:55px;
 }
 .search:hover
@@ -646,8 +615,6 @@ input[type=date]:focus::-webkit-datetime-edit {
 /* П О Д В А Л */
 .main-footer
 {
-	/* display:flex; */
-	/* flex-direction: row; */
 	margin:0;
 	padding:0;
 }
@@ -655,13 +622,14 @@ input[type=date]:focus::-webkit-datetime-edit {
 {
 	display:flex;
 	width:auto;
-	height:auto
+	height:auto;
+	background-image:url(../img/map.png);
 }
-.footer-map 
+
+.map
 {
-background-image:url(../img/map.png);
+	border:none;
 }	
-	
 .footer-data /* Основные данные */	
 {
 	margin:0;
@@ -672,11 +640,9 @@ background-image:url(../img/map.png);
 	position:absolute;
 	top: 2650px; 
 
-	/* list-style:none; */
 	justify-content:space-between; 
 	background-color:rgba(255,255,255,0.8);
 	padding-bottom:38px;	
-	/* margin-top:-120px; */
 }	
 .footer-data-catalog /* Основные данные гостиницы*/	
 {
@@ -685,14 +651,11 @@ background-image:url(../img/map.png);
 	display:flex;
 	width:auto;
 	height:auto;
-/* 	position:absolute;
-	top: 900px;  */
 
-	/* list-style:none; */
 	justify-content:space-between; 
-	/* background-color:rgba(255,255,255,0.8); */
+
 	padding-bottom:38px;	
-	 margin-top:4px; 
+	margin-top:4px; 
 }	
 .VISITSEDONA
 {
@@ -755,8 +718,6 @@ background-image:url(../img/map.png);
 	
 	align-items: center;
 	justify-content: center;
-	/* width: 200px; */
-	/* height:200px; */
 	/* background-color: #81b3d2; */
 }	
 .html-button:hover  path 
@@ -777,7 +738,6 @@ background-image:url(../img/map.png);
 }	
 .html-button svg
 {
-	/* width: 150px;  */
 	height:39px; 
 }	
 
@@ -1157,7 +1117,6 @@ padding:0;
 	margin:0;
 	padding-top:35px;
 	justify-content:space-between;
-	/*flex-grow:1;*/
 	position:absolute;
 	left:1095px;
 	align-items:center;
@@ -1184,9 +1143,7 @@ padding:0;
 	/* background-color: #81b3d2;  */
 	padding-bottom: 30px; 
 	padding-top: 22px;
-	/* margin-bottom:54px;  */
 	 border:1px solid #e5e5e5; 
-	/* outline: 1px solid #e5e5e5; */
 }
 	
 /*** Описание гостиницы ***/
@@ -1206,12 +1163,10 @@ padding:0;
 {
  	padding:0;
 	margin:0;
-	/* margin-top:-9px; */
 	display:flex;
 	/* background-color: #85436e; */
 	justify-content:space-between;
 	width:182px;
-	/* margin-bottom:22px; */
 	padding-bottom:14px;
 }
 .hotel-description li
@@ -1251,7 +1206,6 @@ padding:0;
 	width:110px; 
 	padding-bottom:3px;
 	padding-top:3px;
-	/* height:87px; */
 	color:#ffffff;
 	text-align: center;
 	
@@ -1260,9 +1214,6 @@ padding:0;
     line-height: 21px;
 	font-weight: 700;
 	display:block; 
- 	
-	/* margin:30px auto 0;  */
-	/* padding:0; */
 }
 .button-info:hover
 {
@@ -1279,7 +1230,6 @@ padding:0;
 	width:142px; 
 	padding-bottom:3px;
 	padding-top:3px;
-	/* height:87px; */
 	color:#ffffff;
 	text-align: center;
 	
@@ -1288,9 +1238,6 @@ padding:0;
     line-height: 21px;
 	font-weight: 700;
 	display:block; 
- 	
-	/* margin:30px auto 0;  */
-	/* padding:0; */
 }	
 .button-book:hover
 {
@@ -1310,7 +1257,6 @@ padding:0;
 {
 	padding:0;
 	margin:0;
-	/* background-color: #85436e; */
 	position:absolute;
 	left:1017px;
 	width:112px;
@@ -1324,8 +1270,6 @@ padding:0;
 	margin:0;
 	flex-direction:row-reverse;
 	padding-bottom:42px;
-	/* padding-right:1px; */
-	
 }
 .rating li
 {
@@ -1343,5 +1287,4 @@ padding:0;
 	text-align:center;
 	background-color:#f2f2f2;
 	color:#666666;
-		
 }
